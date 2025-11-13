@@ -1,10 +1,10 @@
-package evil.inc.springsandbox;
+package evil.inc.misc;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringSandboxApplicationTests {
+class MiscApplicationTests {
 
     @Test
     void contextLoads() {

@@ -1,13 +1,13 @@
-package evil.inc.springsandbox;
+package evil.inc.misc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringSandboxApplication {
+public class MiscApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringSandboxApplication.class, args);
+        SpringApplication.run(MiscApplication.class, args);
     }
 
 }
