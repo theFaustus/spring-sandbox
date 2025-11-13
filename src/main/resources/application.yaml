@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: spring-sandbox
+
+management:
+  endpoint:
+    health:
+      show-details: always
