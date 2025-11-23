@@ -13,5 +13,5 @@ public interface DeclarativeUsersClient {
     Collection<User> getUsers();
 
     @GetExchange("/users/{id}")
-    Optional<User> getUser(@PathVariable String id);
+    Optional<User> getUser(@PathVariable Integer id);
 }

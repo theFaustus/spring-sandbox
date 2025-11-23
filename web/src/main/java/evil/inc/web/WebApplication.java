@@ -21,7 +21,7 @@ public class WebApplication {
         return args -> {
             simpleUsersClient.getUsers().forEach(u -> log.info("{}::{}", simpleUsersClient.getClass().getSimpleName(), u));
             declarativeUsersClient.getUsers().forEach(u -> log.info("{}::{}", declarativeUsersClient.getClass().getSimpleName(), u));
-            declarativeUsersClient.getUser("1").ifPresent(u -> log.info("{}::{}", declarativeUsersClient.getClass().getSimpleName(), u));
+            declarativeUsersClient.getUser(1).ifPresent(u -> log.info("{}::{}", declarativeUsersClient.getClass().getSimpleName(), u));
         };
     }
 }

@@ -1,0 +1,5 @@
+### users
+GET localhost:8080/users
+
+### user
+GET localhost:8080/users/1

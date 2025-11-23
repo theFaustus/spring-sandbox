@@ -20,9 +20,9 @@ public class WebConfiguration {
         return HttpServiceProxyFactory
                 .builder()
                 .exchangeAdapter(RestClientAdapter.create(usersRestClient))
+//                .exchangeAdapter(WebClientAdapter.create(usersWebClient))
                 .build();
     }
-
 
     @Bean
     RestClient usersRestClient(RestClient.Builder builder) {

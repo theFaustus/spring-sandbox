@@ -1,0 +1,26 @@
+<table class="table table-hover mb-0">
+    <thead class="table-light">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Address</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr th:each="u : ${users}">
+        <td th:text="${u.id}"></td>
+        <td th:text="${u.name}"></td>
+        <td th:text="${u.username}"></td>
+        <td>
+            <a th:href="'mailto:' + ${u.email}" th:text="${u.email}"></a>
+        </td>
+        <td>
+            <span th:text="${u.address.street}"></span>,
+            <span th:text="${u.address.city}"></span>
+        </td>
+    </tr>
+    </tbody>
+</table>
