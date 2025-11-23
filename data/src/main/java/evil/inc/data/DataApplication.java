@@ -26,4 +26,5 @@ public class DataApplication {
             personRepository.findById(1L).ifPresent(person -> log.info("Found by id: {}", person));
         };
     }
+
 }
