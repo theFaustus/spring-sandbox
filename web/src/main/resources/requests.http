@@ -3,3 +3,22 @@ GET localhost:8080/users
 
 ### user
 GET localhost:8080/users/1
+
+### graphql users
+GRAPHQL localhost:8080/graphql
+
+{
+    getUsers {
+        username
+        email
+        address {
+            street
+        }
+    }
+}
+
+###
+GRPC localhost:8080/evil.inc.web.grpc.UserService/GetAllUsers
+Content-Type: application/json
+
+
