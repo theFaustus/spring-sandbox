@@ -1,0 +1,12 @@
+{
+  "orderId": "PO-X1004",
+  "country": "USA",
+  "total": 75.99,
+  "lineItems": [
+    {
+      "sku": "ST-NOT-SML",
+      "productName": "Small Sticky Notes (6-pack)",
+      "quantity": 12
+    }
+  ]
+}

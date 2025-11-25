@@ -1,0 +1,17 @@
+{
+  "orderId": "PO-X1003",
+  "country": "MEX",
+  "total": 312.00,
+  "lineItems": [
+    {
+      "sku": "CL-SPRAY-M",
+      "productName": "Multipurpose Cleaning Spray",
+      "quantity": 15
+    },
+    {
+      "sku": "CL-TOW-MF",
+      "productName": "Microfiber Cleaning Towels",
+      "quantity": 20
+    }
+  ]
+}

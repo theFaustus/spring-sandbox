@@ -1,0 +1,12 @@
+{
+  "orderId": "PO-X1006",
+  "country": "FRA",
+  "total": 45.75,
+  "lineItems": [
+    {
+      "sku": "SN-TEA-GRN",
+      "productName": "Green Tea Bags (Box of 50)",
+      "quantity": 6
+    }
+  ]
+}

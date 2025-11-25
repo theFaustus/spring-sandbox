@@ -1,0 +1,17 @@
+{
+  "orderId": "PO-X1010",
+  "country": "AUS",
+  "total": 180.25,
+  "lineItems": [
+    {
+      "sku": "SN-WTR-BOT",
+      "productName": "Bottled Water (Case of 24)",
+      "quantity": 10
+    },
+    {
+      "sku": "SN-CRM-PKT",
+      "productName": "Coffee Creamer Packets",
+      "quantity": 5
+    }
+  ]
+}

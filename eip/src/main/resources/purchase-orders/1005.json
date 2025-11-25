@@ -1,0 +1,17 @@
+{
+  "orderId": "PO-X1005",
+  "country": "DEU",
+  "total": 1200.50,
+  "lineItems": [
+    {
+      "sku": "EL-BATT-AA",
+      "productName": "AA Alkaline Batteries (100-pack)",
+      "quantity": 8
+    },
+    {
+      "sku": "EL-BULB-LED",
+      "productName": "Energy Saving LED Bulbs",
+      "quantity": 50
+    }
+  ]
+}

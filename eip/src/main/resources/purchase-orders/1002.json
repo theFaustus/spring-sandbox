@@ -1,0 +1,12 @@
+{
+  "orderId": "PO-X1002",
+  "country": "CAN",
+  "total": 85.50,
+  "lineItems": [
+    {
+      "sku": "SN-COF-DRK",
+      "productName": "Dark Roast Coffee Beans 1kg",
+      "quantity": 3
+    }
+  ]
+}

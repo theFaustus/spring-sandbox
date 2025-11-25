@@ -1,0 +1,12 @@
+{
+  "orderId": "PO-X1009",
+  "country": "JPN",
+  "total": 60.45,
+  "lineItems": [
+    {
+      "sku": "ST-CLIP-SM",
+      "productName": "Small Binder Clips (Box)",
+      "quantity": 15
+    }
+  ]
+}

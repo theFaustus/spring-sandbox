@@ -1,0 +1,17 @@
+{
+  "orderId": "PO-X1007",
+  "country": "ITA",
+  "total": 920.10,
+  "lineItems": [
+    {
+      "sku": "ST-INK-C400",
+      "productName": "Cyan Ink Cartridge",
+      "quantity": 25
+    },
+    {
+      "sku": "ST-INK-M400",
+      "productName": "Magenta Ink Cartridge",
+      "quantity": 25
+    }
+  ]
+}

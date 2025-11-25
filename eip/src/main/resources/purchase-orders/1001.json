@@ -1,0 +1,17 @@
+{
+  "orderId": "PO-X1001",
+  "country": "USA",
+  "total": 550.99,
+  "lineItems": [
+    {
+      "sku": "ST-PPR-A4",
+      "productName": "Premium Printer Paper",
+      "quantity": 10
+    },
+    {
+      "sku": "ST-PEN-BLK",
+      "productName": "Black Gel Pens (12-pack)",
+      "quantity": 5
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "orderId": "PO-X1008",
+  "country": "USA",
+  "total": 150.00,
+  "lineItems": [
+    {
+      "sku": "CL-HAND-SAN",
+      "productName": "Hand Sanitizer Pump (Large)",
+      "quantity": 30
+    }
+  ]
+}
