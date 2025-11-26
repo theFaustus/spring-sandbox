@@ -1,0 +1,2 @@
+### adopt
+POST localhost:8080/dogs/1/adoptions?owner=Mike
