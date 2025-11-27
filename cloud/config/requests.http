@@ -1,0 +1,5 @@
+###
+GET http://localhost:8888/auth/prod
+
+###
+GET http://localhost:8888/eureka/default
