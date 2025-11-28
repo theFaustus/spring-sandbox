@@ -21,9 +21,9 @@ public class DataApplication {
     ApplicationRunner init(PersonRepository personRepository) {
         return _ -> {
 //            badPersonRepository.findAll().forEach(person -> log.info("Found: {}", person.toString()));
-            personRepository.findAll().forEach(person -> log.info("Found: {}", person.toString()));
-            personRepository.findByName("Bob").ifPresent(person -> log.info("Found by name: {}", person));
-            personRepository.findById(1L).ifPresent(person -> log.info("Found by id: {}", person));
+//            personRepository.findAll().forEach(person -> log.info("Found: {}", person.toString()));
+//            personRepository.findByName("Bob").ifPresent(person -> log.info("Found by name: {}", person));
+//            personRepository.findById(1L).ifPresent(person -> log.info("Found by id: {}", person));
         };
     }
 
