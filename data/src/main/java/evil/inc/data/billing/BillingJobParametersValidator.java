@@ -1,4 +1,4 @@
-package evil.inc.data.billing.validator;
+package evil.inc.data.billing;
 
 import org.springframework.batch.core.JobParameters;
 import org.springframework.batch.core.JobParametersInvalidException;

@@ -16,9 +16,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.system.CapturedOutput;
 import org.springframework.boot.test.system.OutputCaptureExtension;
 
-import java.nio.file.Files;
-import java.nio.file.Paths;
-
 @SpringBatchTest
 @SpringBootTest
 @ExtendWith(OutputCaptureExtension.class)
@@ -39,12 +36,14 @@ class DataApplicationTests {
     void testJobExecution(CapturedOutput output) throws Exception {
         JobParameters jobParameters = new JobParametersBuilder()
                 .addString("input.file", "data/src/main/resources/billing-2023-01.csv")
+                .addString("output.file", "data/staging/billing-report-2023-01.csv")
+                .addJobParameter("data.year", 2023, Integer.class)
+                .addJobParameter("data.month", 1, Integer.class)
                 .toJobParameters();
 
         JobExecution jobExecution = this.jobLauncherTestUtils.launchJob(jobParameters);
 
         Assertions.assertEquals(ExitStatus.COMPLETED, jobExecution.getExitStatus());
-//        Assertions.assertTrue(Files.exists(Paths.get("data/staging", "billing-2023-01.csv")));
     }
 
 }
