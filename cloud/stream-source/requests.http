@@ -1,0 +1,12 @@
+### publish transaction
+POST localhost:8080/cash-card/txn
+Content-Type: application/json
+
+{
+  "id": 1,
+  "cashCard": {
+    "id": 1,
+    "owner": "bob",
+    "amountRequestedForAuth": 98.00
+  }
+}
