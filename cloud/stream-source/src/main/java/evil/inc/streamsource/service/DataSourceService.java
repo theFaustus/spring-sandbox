@@ -16,11 +16,11 @@ public class DataSourceService {
         ThreadLocalRandom random = ThreadLocalRandom.current();
         Faker faker = new Faker();
         CashCard cashCard = new CashCard(
-                random.nextLong(),
+                random.nextLong(1_000_000L),
                 faker.name().username(),
                 random.nextDouble(100.0)
         );
-        Transaction transaction = new Transaction(random.nextLong(), cashCard);
+        Transaction transaction = new Transaction(random.nextLong(1_000_000L), cashCard);
         log.info("Generated transaction: {}", transaction);
         return transaction;
     }
