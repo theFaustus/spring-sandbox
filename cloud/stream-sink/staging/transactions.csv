@@ -17,3 +17,6 @@
 447539,380540,46.84945068869866,emilee.ritchie,fd9b67e8-07c0-4000-b4d3-6fcb4366633c,02437 Franklyn Station, Berneiceport, HI 09994,APPROVED
 66009,660460,93.06579689130574,shirlee.berge,37555fcc-fc81-4de4-9a00-d56a0bf3738e,Apt. 480 8960 Milan Vista, Schaeferfurt, IA 40418-4821,APPROVED
 724525,514461,56.77297268279437,jude.abshire,12de98cd-3922-428b-82be-71d26aed43a4,Suite 767 71819 Cherryl Crossing, Wildermanhaven, MD 94249-4278,APPROVED
+
+
+docker run --rm  -p 8083:8083  -e CONNECT_BOOTSTRAP_SERVERS=localhost:9092  -e CONNECT_REST_PORT=8083  -e CONNECT_GROUP_ID=connect-cluster  -e CONNECT_CONFIG_STORAGE_TOPIC=connect-configs  -e CONNECT_OFFSET_STORAGE_TOPIC=connect-offsets  -e CONNECT_STATUS_STORAGE_TOPIC=connect-status  -e CONNECT_KEY_CONVERTER=org.apache.kafka.connect.json.JsonConverter  -e CONNECT_VALUE_CONVERTER=org.apache.kafka.connect.json.JsonConverter  -e CONNECT_INTERNAL_KEY_CONVERTER=org.apache.kafka.connect.json.JsonConverter  -e CONNECT_INTERNAL_VALUE_CONVERTER=org.apache.kafka.connect.json.JsonConverter  confluentinc/cp-kafka-connect:6.1.2

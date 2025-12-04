@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: security
+  sql:
+    init:
+      mode: always
+

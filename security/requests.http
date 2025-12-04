@@ -1,0 +1,17 @@
+### GET all cash-cards
+GET http://localhost:8080/cash-cards
+
+### Basic auth [base64-encoded-string]
+GET http://localhost:8080/cash-cards
+Authorization: Basic dXNlcjowMDQ3ZGFiNS05MDE3LTRjNjctODM5Zi1hYTM0MGZlNDg4MDE=
+
+###
+POST http://localhost:8080/cash-cards
+Authorization: Basic dXNlcjowMDQ3ZGFiNS05MDE3LTRjNjctODM5Zi1hYTM0MGZlNDg4MDE=
+Content-Type: application/json
+
+{
+  "owner": "sarah1",
+  "id": 102,
+  "amount": 100
+}
