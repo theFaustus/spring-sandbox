@@ -52,8 +52,7 @@ class SecurityApplicationTests {
                         .contentType("application/json")
                         .content("""
                                 {
-                                    "amount" : 250.00,
-                                    "owner"  : "sarah1"
+                                    "amount" : 250.00
                                 }
                                 """))
                 .andExpect(status().isCreated())
@@ -70,8 +69,7 @@ class SecurityApplicationTests {
     void shouldReturnAllCashCardsWhenListIsRequested() throws Exception {
         this.mvc.perform(get("/cash-cards").with(user("sarah1")))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.length()").value(3))
-                .andExpect(jsonPath("$..owner").value(hasItem("sarah1")))
-                .andExpect(jsonPath("$..owner").value(hasItem("esuez5")));
+                .andExpect(jsonPath("$.length()").value(2))
+                .andExpect(jsonPath("$..owner").value(hasItem("sarah1")));
     }
 }

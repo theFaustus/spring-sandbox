@@ -5,3 +5,12 @@ spring:
     init:
       mode: always
 
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          public-key-location: classpath:authz.pub
+
+logging:
+  level:
+    org.springframework.security: TRACE
