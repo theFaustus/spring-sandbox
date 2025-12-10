@@ -5,10 +5,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc;
 import org.springframework.mock.web.MockHttpSession;
+import org.springframework.security.oauth2.jwt.JwtClaimsSet;
+import org.springframework.security.oauth2.jwt.JwtEncoderParameters;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.web.servlet.MockMvc;
 
+
+import java.time.Instant;
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Consumer;
 
 import static org.hamcrest.Matchers.hasItem;
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.csrf;
@@ -72,4 +79,5 @@ class SecurityApplicationTests {
                 .andExpect(jsonPath("$.length()").value(2))
                 .andExpect(jsonPath("$..owner").value(hasItem("sarah1")));
     }
+
 }
